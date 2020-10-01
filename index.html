@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Trivia</title>
 </head>
+
 <body>
-    <h1>Trivia</h1>
-    <div id="trivia"></div>
-    <div class="btn-area">
-    <a onclick="countUp()" class="btn-emergency">
-        <span class="btn-emergency-bottom"></span>
-        <span class="btn-emergency-top"><span></span></span>
-    </a>
+    <header>
+        <h1><span class="title">「明日人に教えたくなる」</span>Trivia</h1>
+    </header>
+
+    <div class="outer">
+        <div id="trivia"></div>
     </div>
-    
-    <div>
-        <span id="press-button">0</span>へぇ
+
+    <div id="counter">
+        <span id="press-button">0</span>へぇ〜
+    </div>
+
+    <div id="btn">
+        <a onclick="countUp()" class="btn-emergency">
+            <span class="btn-emergency-bottom"></span>
+            <span class="btn-emergency-top"><span></span></span>
+        </a>
     </div>
 
     <button onclick="window.location.reload();">次のトリビアへ</button>
 
+    <footer>
+        <div class="title">「100へぇ〜」目指してがんばろう！</div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
