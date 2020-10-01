@@ -1,6 +1,4 @@
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -11,14 +9,12 @@ html {
   font-size: 62.5%;
 }
 
-.btn-area{
-    display: inline-block;
-    margin-top: 10px;
+.btn-area {
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.btn,
-a.btn,
-button.btn {
+.btn, a.btn, button.btn {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.5;
@@ -42,9 +38,7 @@ button.btn {
 
 a.btn-emergency {
   position: relative;
-
   display: block;
-
   width: 200px;
   height: 130px;
   margin: 0 auto;
@@ -52,7 +46,6 @@ a.btn-emergency {
 
 a.btn-emergency:active .btn-emergency-top {
   top: 20px;
-
   height: 40px;
 }
 
@@ -60,48 +53,36 @@ a.btn-emergency:active .btn-emergency-top {
   position: absolute;
   top: 0;
   left: 20px;
-
   width: 160px;
   height: 60px;
   margin-top: 30px;
-
   -webkit-transition: all 0s;
-
   transition: all 0s;
-
   border-radius: 0 0 50% 50%;
-  background: #d62d2d;
+  background: #1B5AA2;
 }
 
 .btn-emergency-top:before {
   position: absolute;
   top: -30px;
   left: 0;
-
   width: 160px;
   height: 60px;
-
   content: "";
-
   border-radius: 80px / 30px;
-  background: #ed4c4c;
+  background: lavender;
 }
 
 .btn-emergency-top span {
   font-size: 38px;
   font-weight: bold;
-
   position: absolute;
   top: -24px;
   left: 0;
-
   width: 100%;
-
   -webkit-transform: scaleY(0.75);
-
   transform: scaleY(0.75);
   text-align: center;
-
   color: #f6a3a3;
 }
 
@@ -109,12 +90,88 @@ a.btn-emergency:active .btn-emergency-top {
   position: absolute;
   top: 38px;
   left: 0;
-
   width: 200px;
   height: 80px;
-
   border-radius: 100px / 40px;
   background: #d8e4ea;
   -webkit-box-shadow: 0 8px 0 #c4cacc;
   box-shadow: 0 8px 0 #c4cacc;
+}
+
+* {
+  margin: 0;
+  font-family: "YuGothic";
+}
+
+header {
+  background-color: greenyellow;
+  user-select: none;
+}
+
+h1 {
+  font-size: 9vw;
+  text-align: center;
+}
+
+.title {
+  font-size: 4vw;
+}
+
+.outer {
+  display: table;
+  width: 100%;
+  height: 20vh;
+  background-color: khaki;
+  margin-top: 2vh;
+}
+
+#trivia {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 3vw;
+  padding: 20px;
+}
+
+#counter {
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 40px;
+  user-select: none;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-top: 2vh;
+  cursor: pointer;
+  width: 30vw;
+  height: 7vh;
+  user-select: none;
+  position: relative;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;
+  /*色*/
+  border-radius: 4px;
+  /*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  font-size: large;
+  border: solid 2px #d27d00;
+  /*線色*/
+}
+
+button:active {
+  /*押したとき*/
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+footer {
+  background-color: gainsboro;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  user-select: none;
 }
