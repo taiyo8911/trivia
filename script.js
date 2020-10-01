@@ -24,20 +24,23 @@ triviaList = [
 //トリビアをランダムに表示する
 var random = Math.floor(Math.random() * (triviaList.length));
 
+//へぇを鳴らす
+function playSound() {
+    var audio = new Audio('line-girl1-hee1.mp3');
+    audio.play();
+}
+
 //へぇの回数を数える
 var count = 0;
 function countUp() {
     count++;
+    document.getElementById("press-button").innerHTML = count;
     if (count == 100) {
         alert("満開！！");
-        document.getElementById("press-button").innerHTML = count;
-        var audio = new Audio('line-girl1-hee1.mp3');
-        audio.play();
     }
     else {
         document.getElementById("press-button").innerHTML = count;
-        var audio = new Audio('line-girl1-hee1.mp3');
-        audio.play();
+        
     }
 }
 
