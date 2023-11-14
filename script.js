@@ -1,6 +1,10 @@
-//へぇ〜音を保存
-var audio = new Audio('line-girl1-hee1.mp3');
+// 音声ファイルを読み込む
+var audio = new Audio('audio/line-girl1-hee1.mp3');
 
+// 音量
+audio.volume = 0.2;
+
+// トリビアのリスト
 triviaList = [
     "小便少女もいる",
     "ジャイアント馬場の足は16文なかった",
@@ -12,13 +16,11 @@ triviaList = [
     "ドライブスルーは馬でも行ける",
     "映画実写版「ルパン三世」で、次元大介は田中邦衛だった",
     "阿寒湖には巨大ザリガニがいる",
-    "ロシアより愛をこめて」このポスターの手はジェームズ・ボンドの手ではなく水野晴郎の手である",
     "目黒駅は目黒区になく、品川駅は品川にない",
     "タロは今ハク製になっている",
     "国宝十一面観音立像の顔のうち1つだけ大爆笑している",
     "「PUMA」の創始者と「adidas」の創始者は兄弟である",
     "笑点のテーマには歌詞がある",
-    "本来UFOは「Unidentified Flying Objecy」だが焼きそばU.F.Oは「うまい・太い・大きい」である",
     "警視庁のマスコットピーポくんには家族がいる",
     "うなぎのヌルヌルは水をきれいにする",
     "映画実写版「ドカベン」で殿馬は川谷拓三だった",
@@ -41,7 +43,6 @@ triviaList = [
     "童謡「しゃぼん玉」は悲しい歌である",
     "「髑髏」という漢字には簡単な覚え方がある",
     "パパイヤ鈴木は昔ディズニーランドで踊っていた",
-    "コンドームメーカー「フジラテックス」の自社ビルの一部はコンドームの形をしている",
     "目玉のオヤジは目を閉じて寝る",
     "キリンビールの麒麟の絵には「キ」「リ」「ン」の文字が隠されている",
     "石立鉄男の声だけを集めたCDがある",
@@ -99,27 +100,20 @@ triviaList = [
     "放送中に自分がカツラであると告白したアナウンサーがいる",
 ]
 
-//トリビアをランダムに表示する
+//　ランダムにトリビアを表示する
 var random = Math.floor(Math.random() * (triviaList.length));
 
-//へぇを鳴らす
+//　ボタンを押したら音声を再生する
 function playSound() {
     audio.play();
 }
 
-//へぇの回数を数える
+//　ボタンを押した回数をカウントする
 var count = 0;
 function countUp() {
     count++;
-    document.getElementById("press-button").innerHTML = count;
-    if (count == 100) {
-        alert("満開！！");
-    }
-    else {
-        document.getElementById("press-button").innerHTML = count;
-        
-    }
+    document.getElementById("count").textContent = count + "へぇ～";
 }
 
-//最初のトリビアを表示する
+// トリビアを表示する
 document.getElementById("trivia").innerHTML = triviaList[random];

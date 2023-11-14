@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Trivia</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>トリビアを言うよ</title>
+    </head>
 
-<body>
-    <header>
-        <h1><span class="title">「明日人に教えたくなる」</span>Trivia</h1>
-    </header>
+    <body>
+        <h1>トリビアを言うよ</h1>
 
-    <div class="outer">
-        <div id="trivia"></div>
-    </div>
+        <div id="trivia" class="trivia"></div>
 
-    <div id="counter">
-        <span id="press-button">0</span>へぇ〜
-    </div>
+        <div id="count" class="count">0へぇ〜</div>
 
-    <div id="btn">
-        <a onclick="countUp(), playSound()" class="btn-emergency">
-            <span class="btn-emergency-bottom"></span>
-            <span class="btn-emergency-top"><span></span></span>
-        </a>
-    </div>
+        <div class="push_button">
+            <a onclick="countUp(), playSound()" class="btn-emergency">
+                <span class="btn-emergency-bottom"></span>
+                <span class="btn-emergency-top"></span>
+            </a>
+        </div>
 
-    <button onclick="window.location.reload();">次のトリビア</button>
+        <button class="next_button" onclick="window.location.reload();">次のトリビア</button>
 
-    <footer>
-        <div class="title">「100へぇ〜」目指してがんばろう！</div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 
 </html>

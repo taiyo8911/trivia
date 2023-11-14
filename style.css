@@ -1,39 +1,51 @@
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "YuGothic";
 }
 
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
+body {
+  margin: 0 auto;
+  user-select: none;
+  text-align: center;
+  max-width: 800px;
 }
 
-.btn-area {
-  display: inline-block;
-  margin-top: 10px;
+h1 {
+  padding: 30px;
 }
 
+.trivia {
+  font-weight: bold;
+  background-color: khaki;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.count {
+  font-weight: bold;
+  padding: 20px;
+}
+
+.push_button {
+  margin-bottom: 30px;
+}
+
+.btn-area,
 .btn, a.btn, button.btn {
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.5;
   position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   -webkit-transition: all 0s;
   transition: all 0s;
-  text-align: center;
   vertical-align: middle;
   text-decoration: none;
   letter-spacing: 0.1em;
   color: #212529;
-  border-radius: 0.5rem;
 }
 
 a.btn-emergency {
@@ -42,6 +54,7 @@ a.btn-emergency {
   width: 200px;
   height: 130px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 a.btn-emergency:active .btn-emergency-top {
@@ -82,7 +95,6 @@ a.btn-emergency:active .btn-emergency-top {
   width: 100%;
   -webkit-transform: scaleY(0.75);
   transform: scaleY(0.75);
-  text-align: center;
   color: #f6a3a3;
 }
 
@@ -98,80 +110,14 @@ a.btn-emergency:active .btn-emergency-top {
   box-shadow: 0 8px 0 #c4cacc;
 }
 
-* {
-  margin: 0;
-  font-family: "YuGothic";
-}
-
-header {
-  background-color: greenyellow;
-  user-select: none;
-}
-
-h1 {
-  font-size: 9vw;
-  text-align: center;
-}
-
-.title {
-  font-size: 4vw;
-}
-
-.outer {
-  display: table;
-  width: 100%;
-  height: 30vh;
-  background-color: khaki;
-  margin-top: 2vh;
-}
-
-#trivia {
-  display: table-cell;
-  vertical-align: middle;
-  font-weight: bold;
-  font-size: 6vw;
-  padding: 20px;
-}
-
-#counter {
-  margin-top: 2vh;
-  text-align: center;
-  font-size: 40px;
-  user-select: none;
-}
-
-button {
-  display: block;
-  margin: auto;
-  margin-top: 2vh;
+.next_button {
   cursor: pointer;
-  width: 30vw;
-  height: 7vh;
-  user-select: none;
-  position: relative;
-  padding: 0.25em 0.5em;
-  text-decoration: none;
+  padding: 0.5em;
   color: #FFF;
   background: #fd9535;
-  /*色*/
   border-radius: 4px;
-  /*角の丸み*/
   box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 30px;
   border: solid 2px #d27d00;
-  /*線色*/
-}
-
-button:active {
-  /*押したとき*/
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
-}
-
-footer {
-  background-color: gainsboro;
-  text-align: center;
-  margin-top: 20px;
-  padding: 5px;
-  user-select: none;
 }
